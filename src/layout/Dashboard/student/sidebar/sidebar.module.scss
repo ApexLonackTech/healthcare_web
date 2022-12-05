@@ -1,0 +1,179 @@
+.sideMenu {
+  .logoContainer {
+    display: none;
+    @media screen and (max-width: 760px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: #201f1f;
+      margin: 10px 10px 0px 10px;
+      // top: 24px;
+      button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+      }
+      .logo {
+        display: flex;
+        flex-direction: row;
+        img {
+          object-fit: contain;
+          width: 40px;
+          margin-right: 10px;
+        }
+        span {
+          font-style: normal;
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 15px;
+          text-align: center;
+          color: #201f1f;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .footer_nav {
+    display: none;
+    @media screen and (max-width: 760px) {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 70px;
+      background-color: #545be8;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      z-index: 30;
+      .menuList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        color: #ffffff;
+        cursor: pointer;
+        text-decoration: none;
+        &.active {
+            justify-content: space-between;
+            background: #ffffff;
+            color: #201f1f;
+            // width: 65px;
+            padding: 2px 2px 2px 2px;
+            background-blend-mode: lighten;
+          }
+        span {
+          font-style: normal;
+          font-weight: 800;
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          margin-top: 5px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .sidebar_nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin: 10px;
+    width: 100px;
+    height: 670px;
+    overflow-y: auto;
+    left: 0px;
+    top: 0px;
+    // background: linear-gradient(180deg, #3317e1 0%, #545be8 100%);
+    border-radius: 10px 0px 0px 10px;
+    // height: 100vh;
+    z-index: 30;
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
+    .logoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 83px;
+      height: 33px;
+      margin: 10px 10px 40px 10px;
+      // top: 24px;
+
+      img {
+        object-fit: contain;
+      }
+      span {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 10px;
+      }
+    }
+    .lineDiv {
+      margin-top: 30px;
+      border: 1px solid #fcfcfc;
+    }
+    .menuContainer {
+      display: flex;
+      flex-direction: column;
+      // position: absolute;
+      // align-items: center;
+      // right: 0px;
+      width: 100%;
+      justify-content: space-evenly;
+      // margin: 10px;
+      height: 100%;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #ffffff;
+        align-items: center;
+        cursor: pointer;
+        &.active {
+          // justify-content: space-between;
+          background: #ffffff;
+          color: #201f1f;
+          padding: 2px 0px 2px 0px;
+          background-blend-mode: lighten;
+          margin-right: 0px;
+        }
+        &:hover {
+          // justify-content: space-between;
+          background: #545be8;
+          padding: 2px 0px 2px 0px;
+          background-blend-mode: lighten;
+        }
+        .itemList {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-right: 10px;
+          color:#fff;
+          text-decoration: none;
+          &.active{
+            color: #201f1f;
+          }
+          span {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+           
+            margin-top: 10px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

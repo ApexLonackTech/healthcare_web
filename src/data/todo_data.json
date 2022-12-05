@@ -1,0 +1,26 @@
+[
+    {
+        "type":"event",
+        "title":"Meeting with Mrs Adetuwa Lasan",
+        "date":"2022/11/12",
+        "time":"12:00"
+    },
+    {
+        "type":"assignment",
+        "title":"QUIZ NSPH Safety Policy 1",
+        "date":"2022/11/12",
+        "time":"12:00"
+    },
+    {
+        "type":"discussion",
+        "title":"Group Discussion Health Mgt",
+        "date":"2022/11/12",
+        "time":"12:00"
+    },
+    {
+        "type":"assignment",
+        "title":"Assignment NSPH Safety Policy",
+        "date":"2022/11/12",
+        "time":"12:00"
+    }
+]

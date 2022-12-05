@@ -1,0 +1,20 @@
+[
+    {
+      "id": "ass",
+      "label": "Assignment",
+      "value": 249,
+      "color": "hsl(96, 70%, 50%)"
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz",
+      "value": 517,
+      "color": "hsl(343, 70%, 50%)"
+    },
+    {
+      "id": "research",
+      "label": "Research",
+      "value": 241,
+      "color": "hsl(24, 70%, 50%)"
+    }
+  ]

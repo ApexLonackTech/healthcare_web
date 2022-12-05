@@ -1,0 +1,124 @@
+.offer {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 100px 0px 100px 50px;
+  @media screen and (max-width: 900px) {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .text_column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0px 70px;
+    @media screen and (max-width: 900px) {
+      margin: 20px;
+      width: 90%;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 12px;
+      color: #545be8;
+      margin: 15px 0px;
+      @media screen and (max-width: 900px) {
+        font-size: 16px;
+      }
+    }
+    .sub_title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35.359px;
+      line-height: 45px;
+      width: 60%;
+      color: #141e32;
+      margin-bottom: 30px;
+      @media screen and (max-width: 900px) {
+        font-size: 27px;
+        line-height: 30px;
+      }
+    }
+    .description {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #969696;
+    }
+  }
+  .row_section {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background: #dcddec;
+      border-radius: 4.1186px;
+      width: 300px;
+      margin-right: 20px;
+      cursor:grab;
+      &:hover{
+        animation: offerBox 1s;
+        background-color: #545be8;
+      }
+      &:hover > .icon{
+        animation:1s;
+        background-color: white;
+      }
+      &:hover > .heading{
+        animation:1s;
+        color: white;
+      }
+      &:hover > .description{
+        animation:1s;
+        color: white;
+      }
+      @media screen and (max-width: 900px) {
+        margin-right: 0px;
+        margin-top: 15px;
+      }
+      .icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #545be8;
+        color: #f0c932;
+        margin: 10px;
+       
+      }
+      .heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #000;
+        margin: 10px;
+       
+      }
+      .description {
+        // font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000;
+        margin: 10px;
+       
+      }
+    }
+  }
+}

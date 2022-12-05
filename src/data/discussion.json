@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "uuid": "213454",
+        "title": "How to patch KDE on FreeBSD?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequataliquet maecenas ut sit nulla",
+        "created_at": "2022-11-12 12:00",
+        "posted_by": {
+            "name": "Prof Adeoluwa James",
+            "image": "https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?b=1&s=170667a&w=0&k=20&c=MRMqc79PuLmQfxJ99fTfGqHL07EDHqHLWg0Tb4rPXQc="
+        },
+        "tag": [
+            {
+                "id": 2,
+                "name": "Linux"
+            },
+            {
+                "id": 3,
+                "name": "Windows"
+            },
+            {
+                "id": 4,
+                "name": "Games"
+            }
+        ],
+        "stat": {
+            "view": 121,
+            "comment": 60,
+            "vote": 20
+        }
+    },
+    {
+        "id": 1,
+        "uuid": "213454",
+        "title": "How to patch KDE on FreeBSD?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequataliquet maecenas ut sit nulla",
+        "created_at": "2022-11-12 12:00",
+        "posted_by": {
+            "name": "Prof Adeoluwa James",
+            "image": "https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?b=1&s=170667a&w=0&k=20&c=MRMqc79PuLmQfxJ99fTfGqHL07EDHqHLWg0Tb4rPXQc="
+        },
+        "tag": [
+            {
+                "id": 2,
+                "name": "Linux"
+            },
+            {
+                "id": 3,
+                "name": "Windows"
+            },
+            {
+                "id": 4,
+                "name": "Games"
+            }
+        ],
+        "stat": {
+            "view": 121,
+            "comment": 60,
+            "vote": 20
+        }
+    },
+    {
+        "id": 1,
+        "uuid": "213454",
+        "title": "How to patch KDE on FreeBSD?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequataliquet maecenas ut sit nulla",
+        "created_at": "2022-11-12 12:00",
+        "posted_by": {
+            "name": "Prof Adeoluwa James",
+            "image": "https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?b=1&s=170667a&w=0&k=20&c=MRMqc79PuLmQfxJ99fTfGqHL07EDHqHLWg0Tb4rPXQc="
+        },
+        "tag": [
+            {
+                "id": 2,
+                "name": "Linux"
+            },
+            {
+                "id": 3,
+                "name": "Windows"
+            },
+            {
+                "id": 4,
+                "name": "Games"
+            }
+        ],
+        "stat": {
+            "view": 121,
+            "comment": 60,
+            "vote": 20
+        }
+    },
+    {
+        "id": 1,
+        "uuid": "213454",
+        "title": "How to patch KDE on FreeBSD?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequataliquet maecenas ut sit nulla",
+        "created_at": "2022-11-12 12:00",
+        "posted_by": {
+            "name": "Prof Adeoluwa James",
+            "image": "https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?b=1&s=170667a&w=0&k=20&c=MRMqc79PuLmQfxJ99fTfGqHL07EDHqHLWg0Tb4rPXQc="
+        },
+        "tag": [
+            {
+                "id": 2,
+                "name": "Linux"
+            },
+            {
+                "id": 3,
+                "name": "Windows"
+            },
+            {
+                "id": 4,
+                "name": "Games"
+            }
+        ],
+        "stat": {
+            "view": 121,
+            "comment": 60,
+            "vote": 20
+        }
+    }
+]

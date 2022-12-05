@@ -1,0 +1,142 @@
+[
+    {
+        "title":"Introduction",
+        "lecture":4,
+        "duration":"7min",
+        "section":[
+            {
+                "title":"Course Overview & What you'll learn",
+                "duration":"02:55",
+                "type":"media"
+            },
+            {
+                "title":"Get to know Instructor",
+                "duration":"02:55",
+                "type":"media"
+            },
+            {
+                "title":"How to get certificate",
+                "duration":"02:55",
+                "type":"media"
+            },
+            {
+                "title":"Join the Discussion",
+                "duration":"02:55",
+                "type":"media"
+            }
+        ]
+
+    },
+    {
+        "title":"The Endocrine system Explained",
+        "lecture":5,
+        "duration":"16min",
+        "section":[
+            {
+                "title":"Hormones Introduction",
+                "duration":"01:55",
+                "type":"media"
+            },
+            {
+                "title":"The 3 types of hormones",
+                "duration":"04:00",
+                "type":"media"
+            },
+            {
+                "title":"Endocrine system Explained",
+                "duration":"03:55",
+                "type":"media"
+            },
+            {
+                "title":"Cholesterol, hormones and heart disease",
+                "duration":"07:32",
+                "type":"media"
+            }
+        ]
+
+    },
+    {
+        "title":"Individual Hormone Explained",
+        "lecture":5,
+        "duration":"30min",
+        "section":[
+            {
+                "title":"Hormones Introduction",
+                "duration":"01:55",
+                "type":"media"
+            },
+            {
+                "title":"The 3 types of hormones",
+                "duration":"04:00",
+                "type":"media"
+            },
+            {
+                "title":"Endocrine system Explained",
+                "duration":"03:55",
+                "type":"media"
+            },
+            {
+                "title":"Cholesterol, hormones and heart disease",
+                "duration":"07:32",
+                "type":"media"
+            }
+        ]
+
+    },
+    {
+        "title":"Setting up your diet",
+        "lecture":4,
+        "duration":"45min",
+        "section":[
+            {
+                "title":"Hormones Introduction",
+                "duration":"01:55",
+                "type":"media"
+            },
+            {
+                "title":"The 3 types of hormones",
+                "duration":"04:00",
+                "type":"media"
+            },
+            {
+                "title":"Endocrine system Explained",
+                "duration":"03:55",
+                "type":"media"
+            },
+            {
+                "title":"Cholesterol, hormones and heart disease",
+                "duration":"07:32",
+                "type":"media"
+            }
+        ]
+
+    },
+    {
+        "title":"Rest & Sleep",
+        "lecture":5,
+        "duration":"12min",
+        "section":[
+            {
+                "title":"Hormones Introduction",
+                "duration":"01:55",
+                "type":"media"
+            },
+            {
+                "title":"The 3 types of hormones",
+                "duration":"04:00",
+                "type":"media"
+            },
+            {
+                "title":"Endocrine system Explained",
+                "duration":"03:55",
+                "type":"media"
+            },
+            {
+                "title":"Cholesterol, hormones and heart disease",
+                "duration":"07:32",
+                "type":"media"
+            }
+        ]
+
+    }
+]

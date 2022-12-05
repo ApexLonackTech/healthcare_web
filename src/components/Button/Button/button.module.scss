@@ -1,0 +1,14 @@
+.buttonOnly{
+    align-items: center;
+    border: 1px solid;
+    cursor: pointer;
+    display: row;
+    height: 3rem;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    justify-content: center;
+    -webkit-user-select: none;
+    vertical-align: bottom;
+    white-space: nowrap;
+}

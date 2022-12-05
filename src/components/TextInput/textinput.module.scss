@@ -1,0 +1,35 @@
+.input_section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    label {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: #969696;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 320px;
+      height: 40px;
+      background: #ffffff;
+      border: 1px solid #747272;
+      border-radius: 10px;
+      color: #000000;
+      padding: 10px;
+      outline-color: #000000;
+      &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #969696;
+        padding: 10px;
+      }
+      &:focus{
+        border: 1px solid #e7e7e7;
+      }
+    }
+  
+  }

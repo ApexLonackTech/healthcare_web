@@ -1,0 +1,70 @@
+.discuss_item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  &:hover {
+    background-color: rgba(141, 140, 140, 0.06);
+  }
+  .header_row {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .col_dis {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin-left: 10px;
+      h3 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 13px;
+        font-weight: 400;
+      }
+      .row_dis {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        .a_attribute {
+          font-size: 13px;
+          font-weight: 400;
+          color: #545be8;
+          padding: 0px;
+          margin-right: 5px;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+        span {
+          font-size: 13px;
+          font-weight: 400;
+          padding: 0px;
+          margin: 0px;
+        }
+      }
+    }
+    .col_up_dis {
+      display: flex;
+      flex-direction: column;
+      .row_dis {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        .upvote{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 500;
+        }
+      }
+    }
+  }
+}

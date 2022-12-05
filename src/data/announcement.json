@@ -1,0 +1,56 @@
+[
+    {
+        "id":1,
+        "uuid":"2132456",
+        "title":"Welcome to Publich Health Course",
+        "category":"All Scetion",
+        "description":"Donec vel luctus velit. Ut vulputate eros ut diam pellentesque, vitae",
+        "posted_on":"2022-11-12 12:00",
+        "content":"<div style='display:flex;flex-direction:column'><div style='display:flex;flex-direction:row;align-items:center;justify-contents:space-between;'><img style='width:50%;object-fit:contain;margin-right:10px' src='https://t4.ftcdn.net/jpg/04/44/53/99/360_F_444539901_2GSnvmTX14LELJ6edPudUsarbcytOEgj.jpg' /><img style='width:50%;object-fit:contain;' src='https://t4.ftcdn.net/jpg/04/44/53/99/360_F_444539901_2GSnvmTX14LELJ6edPudUsarbcytOEgj.jpg' /></div><div style='display:flex;flex-direction:column;'><h2 style='font-weight:700;margin:10px 0px'>What to expect</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa tortor, eleifend id tellus eget, convallis ullamcorper risus. Nam nec sagittis eros. Donec vel luctus velit. Ut vulputate eros ut diam pellentesque, vitae iaculis ex rutrum. In nec laoreet purus, eget malesuada libero. Integer non leo mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi hendrerit odio risus, eu rhoncus turpis ultricies vitae. Nunc imperdiet diam sit amet elit commodo mattis. Maecenas non justo euismod, elementum tortor ut, malesuada urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus magna. Pellentesque vehicula tellus in scelerisque ultricies</p></div></div> ",
+        "posted_by":{
+            "name":"Prof Adeoluwa James",
+            "image":"https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?b=1&s=170667a&w=0&k=20&c=MRMqc79PuLmQfxJ99fTfGqHL07EDHqHLWg0Tb4rPXQc="
+        }
+    },
+    {
+        "id":1,
+        "uuid":"21324356",
+        "title":"Welcome to Publich Health Course",
+        "category":"All Scetion",
+        "description":"Donec vel luctus velit. Ut vulputate eros ut diam pellentesque, vitae",
+        "posted_on":"2022-11-12 12:00",
+        "content":"",
+        "posted_by":{
+            "name":"Prof Adeoluwa James",
+            "image":"https://media.istockphoto.com/id/1300972574/photo/millennial-male-team-leader-organize-virtual-workshop-with-employees-online.jpg?b=1&s=170667a&w=0&k=20&c=96pCQon1xF3_onEkkckNg4cC9SCbshMvx0CfKl2ZiYs="
+        }
+    },
+    {
+        "id":1,
+        "uuid":"21324356",
+        "title":"Welcome to Publich Health Course",
+        "category":"All Scetion",
+        "description":"Donec vel luctus velit. Ut vulputate eros ut diam pellentesque, vitae",
+        "posted_on":"2022-11-12 12:00",
+        "content":"",
+        "posted_by":{
+            "name":"Prof Adeoluwa James",
+            "image":"https://us.123rf.com/450wm/fizkes/fizkes2012/fizkes201200014/160302404-close-up-profile-picture-of-smiling-young-caucasian-businessman-show-leadership-qualities-headshot-p.jpg?ver=6"
+        }
+    },
+    {
+        "id":1,
+        "uuid":"21324356",
+        "title":"Welcome to Publich Health Course",
+        "category":"All Scetion",
+        "description":"Donec vel luctus velit. Ut vulputate eros ut diam pellentesque, vitae",
+        "posted_on":"2022-11-12 12:00",
+        "content":"",
+        "posted_by":{
+            "name":"Prof Adeoluwa James",
+            "image":"https://t4.ftcdn.net/jpg/04/44/53/99/360_F_444539901_2GSnvmTX14LELJ6edPudUsarbcytOEgj.jpg"
+        }
+    }
+
+    
+]

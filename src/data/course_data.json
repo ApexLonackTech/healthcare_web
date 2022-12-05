@@ -1,0 +1,56 @@
+[
+    {
+        "ref":"324566",
+        "title":"Clinical Laboratory",
+        "color":"#b02020",
+        "progress":45,
+        "section":41,
+        "status":10,
+        "image":"https://www.bangor.ac.uk/sites/default/files/styles/16x9_1100w/public/2020-07/shutterstock_502829518.jpg?h=62bd74a1&itok=t0OOG1wH"
+    },
+    {
+        "ref":"324566",
+        "title":"Public Health",
+        "color":"#feff00",
+        "progress":69,
+        "section":32,
+        "status":20,
+        "image":"https://www.bangor.ac.uk/sites/default/files/styles/16x9_1100w/public/2020-07/shutterstock_400874527.jpg?h=2ecac5f7&itok=QFrZ-nnY"
+    },
+    {
+        "ref":"324566",
+        "title":"Antenatal care",
+        "color":"#002668",
+        "progress":90,
+        "section":50,
+        "status":45,
+        "image":"https://static.vecteezy.com/system/resources/thumbnails/007/436/518/small/doctor-and-stethoscope-in-hand-touch-modern-medical-network-icon-maintaining-a-connected-virtual-network-3d-illustration-free-photo.jpg"
+    },
+    {
+        "ref":"324566",
+        "title":"Clinical Laboratory",
+        "color":"#b02020",
+        "progress":45,
+        "section":38,
+        "status":38,
+        "image":"https://www.bangor.ac.uk/sites/default/files/styles/16x9_1100w/public/2020-07/shutterstock_502829518.jpg?h=62bd74a1&itok=t0OOG1wH"
+    },
+    {
+        "ref":"324566",
+        "title":"Public Health",
+        "color":"#feff00",
+        "progress":69,
+        "section":25,
+        "status":25,
+        "image":"https://www.bangor.ac.uk/sites/default/files/styles/16x9_1100w/public/2020-07/shutterstock_400874527.jpg?h=2ecac5f7&itok=QFrZ-nnY"
+    },
+    {
+        "ref":"324566",
+        "title":"Antenatal care",
+        "color":"#002668",
+        "progress":100,
+        "section":36,
+        "status":36,
+        "image":"https://static.vecteezy.com/system/resources/thumbnails/007/436/518/small/doctor-and-stethoscope-in-hand-touch-modern-medical-network-icon-maintaining-a-connected-virtual-network-3d-illustration-free-photo.jpg"
+    }
+]

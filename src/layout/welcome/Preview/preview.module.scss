@@ -1,0 +1,190 @@
+.previewContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid white;
+  width: 22em;
+  //   height: 30rem;
+  filter: drop-shadow(0px 7px 7.43758px rgba(0, 0, 0, 0.4));
+  img {
+    width: 22rem;
+    height: 15rem;
+    object-fit: cover;
+  }
+  .preview {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #1c1d1f94;
+    width: 100%;
+    height: 15rem;
+    .play {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        color: #545be8;
+      }
+    }
+  }
+  .centerSection {
+    display: flex;
+    flex-direction: column;
+    .price_section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 20px 0px 20px;
+      .amount {
+        color: black !important;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0px;
+      }
+      .oldPrice {
+        text-decoration: line-through;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0px 10px;
+      }
+      .percent {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0px 10px;
+      }
+      .addCart {
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        display: row;
+        height: 3rem;
+        background-color: #545be8;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        min-width: 83%;
+        justify-content: center;
+        -webkit-user-select: none;
+        vertical-align: bottom;
+        white-space: nowrap;
+        &:hover {
+          background-color: #4047da;
+        }
+      }
+      .buyNow {
+        align-items: center;
+        border: 1px solid;
+        cursor: pointer;
+        display: row;
+        height: 3rem;
+        background-color: transparent;
+        color: rgb(31, 31, 31);
+        font-size: 14px;
+        font-weight: 700;
+        width: 100%;
+        justify-content: center;
+        -webkit-user-select: none;
+        vertical-align: bottom;
+        white-space: nowrap;
+        &:hover {
+          background-color: #e7e7e7;
+        }
+      }
+      .addFavourite {
+        align-items: center;
+        cursor: pointer;
+        display: row;
+        height: 3rem;
+        border: 1px solid #1c1d1f;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 700;
+        width: 20%;
+        justify-content: center;
+        -webkit-user-select: none;
+        vertical-align: bottom;
+        white-space: nowrap;
+        margin: 0px 5px;
+        padding: 0px 10px;
+        &:hover {
+          background-color: #e7e7e7;
+        }
+      }
+    }
+    .timer_section {
+      display: flex;
+      flex-direction: row;
+      margin: -20px 20px;
+      .timerPrice {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: red;
+        b {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-right: 5px;
+        }
+      }
+    }
+    .bottom_section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .guarantee {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 300;
+        margin: 5px 10px;
+      }
+      .include_section {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px;
+        .includeLabel {
+          color: black !important;
+          font-size: 18px;
+          font-weight: 700;
+          margin: 10px 0px;
+        }
+        .iconRow {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 3px 0px;
+          color: black;
+          font-size: 14px;
+          font-weight: 400;
+        }
+        .bottomRow {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+          margin: 20px 0px;
+          a {
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

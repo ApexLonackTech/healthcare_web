@@ -1,0 +1,101 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px;
+  background: #1c1d1f;
+  // position: absolute;
+  // bottom: 0;
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+  }
+  .section_column {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    @media screen and (max-width: 900px) {
+      width: 40%;
+      margin-top: 20px;
+    }
+    .logoContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      img {
+        object-fit: contain;
+        width: 40px;
+        margin-right: 10px;
+      }
+      .logoName {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 15px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 10px;
+      }
+    }
+    .description {
+      font-style: normal;
+      font-weight: 500;
+      color: whitesmoke;
+    }
+    .socialContainer {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+      .social {
+        border: 1px solid #ffffff;
+        padding: 10px;
+        color: white;
+        margin-right: 10px;
+      }
+    }
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 15px;
+      // text-align: center;
+      color: #ffffff;
+      margin-top: 10px;
+      margin-left: 40px;
+      @media screen and (max-width: 900px) {
+        text-decoration: underline;
+        line-height: 18px;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      // justify-content: center;
+      // align-items: center;
+      margin-top: 20px;
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 15px;
+        cursor: pointer;
+        outline: none;
+        color: #e2e2e2;
+        margin-top: 20px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .first {
+    margin-right: 50px;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+}

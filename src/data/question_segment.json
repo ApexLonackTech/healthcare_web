@@ -1,0 +1,30 @@
+[
+    {
+        "title":"Practice Test",
+        "lecture":0,
+        "duration":"",
+        "section":[
+            {
+                "title":"Course Overview & What you'll learn",
+                "duration":"02:55",
+                "type":"media"
+            },
+            {
+                "title":"Get to know Instructor",
+                "duration":"02:55",
+                "type":"media"
+            },
+            {
+                "title":"How to get certificate",
+                "duration":"02:55",
+                "type":"media"
+            },
+            {
+                "title":"Join the Discussion",
+                "duration":"02:55",
+                "type":"media"
+            }
+        ]
+
+    }
+]
