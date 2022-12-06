@@ -68,7 +68,7 @@ const Login = () => {
           </div>
           <div className={Style.input_section}>
             <span className={Style.sigup}>
-              Don't have an account yet? <Link href={"/auth/register"}><a >Sign Up</a></Link>
+              Dont have an account yet? <Link href={"/auth/register"}><a >Sign Up</a></Link>
             </span>
           </div>
           <div className={Style.divider}>

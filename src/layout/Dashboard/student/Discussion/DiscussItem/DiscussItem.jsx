@@ -12,8 +12,11 @@ function DiscussItem(props) {
         <img src="/img/instructor.png" loading="lazy" />
         <div className={Style.col_dis}>
           <div>
-          <h3>COURSE UPDATE 4/19/2021</h3>
-          <p>Hello allI've pushed a major course update today, and I understand this may disrupt your learning sch</p>
+            <h3>COURSE UPDATE 4/19/2021</h3>
+            <p>
+              Hello all Ive pushed a major course update today, and I understand
+              this may disrupt your learning sch
+            </p>
           </div>
           <div className={Style.row_dis}>
             <b className={Style.a_attribute}>Stephane Marek</b>
@@ -22,12 +25,18 @@ function DiscussItem(props) {
           </div>
         </div>
         <div className={Style.col_up_dis}>
-        <div className={Style.row_dis}>
-            <button className={Style.upvote}>323<ArrowCircleUp /></button>
-        </div>
-        <div className={Style.row_dis}>
-            <button className={Style.upvote}>323<Forum /></button>
-        </div>
+          <div className={Style.row_dis}>
+            <button className={Style.upvote}>
+              323
+              <ArrowCircleUp />
+            </button>
+          </div>
+          <div className={Style.row_dis}>
+            <button className={Style.upvote}>
+              323
+              <Forum />
+            </button>
+          </div>
         </div>
       </div>
     </li>

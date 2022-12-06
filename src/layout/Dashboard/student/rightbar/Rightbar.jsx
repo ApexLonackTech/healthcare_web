@@ -32,7 +32,7 @@ function Rightbar(props) {
           <MoreHoriz  />
         </div>
         {todo_data.map((item, index) => (
-          <div className={theme==="light"? Style.item+" l_r_b d_t": Style.item+" d_r_b l_t"}>
+          <div key={index} className={theme==="light"? Style.item+" l_r_b d_t": Style.item+" d_r_b l_t"}>
             {item.type === "event" && (
               <div className={Style.iconContainer}>
                 <NotificationsNone />
@@ -65,7 +65,7 @@ function Rightbar(props) {
           <MoreHoriz  />
         </div>
         {todo_data.map((item, index) => (
-          <div className={theme==="light"? Style.item+" l_r_b d_t": Style.item+" d_r_b l_t"}>
+          <div key={index} className={theme==="light"? Style.item+" l_r_b d_t": Style.item+" d_r_b l_t"}>
             {item.type === "event" && (
               <div className={Style.iconContainer}>
                 <NotificationsNone />

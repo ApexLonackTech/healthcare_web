@@ -67,7 +67,7 @@ function DiscussList(props) {
             <div className="bottom_row">
               <div className="tag_row">
                 {item?.tag.map((tag, k) => (
-                  <button className={"tag d_m_b"}>{tag.name}</button>
+                  <button className={"tag d_m_b"} key={k}>{tag.name}</button>
                 ))}
               </div>
               <div className="tag_row">

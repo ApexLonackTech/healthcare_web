@@ -13,7 +13,7 @@ export default function MultipleSelect(props) {
         }
       >
         {props.content.map((item, index) => (
-          <option value={item.value}>{item.name}</option>
+          <option value={item.value} key={index}>{item.name}</option>
         ))}
       </select>
     </div>

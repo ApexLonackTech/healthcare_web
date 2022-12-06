@@ -1,10 +1,6 @@
 import React from 'react';
-import Footer from '../../components/Footer/Footer';
-import CourseLit from '../../layout/Home/CourseLit/CourseLit';
-import Offer from '../../layout/Home/Offer/Offer';
-import Slide from '../../layout/Home/Slide/Slide';
-import Stat from '../../layout/Home/Stat/Stat';
-import MenuBar from '../../components/menuBar/MenuBar';
+
+import { CourseSection, Footer, MenuBar, Offer, Slide, Stat } from "../../layout/welcome";
 import Style from  "../../styles/welcome.module.scss";
 
 const Welcome = () => {
@@ -14,7 +10,7 @@ const Welcome = () => {
                 <Slide />
                 <Offer />
                 <Stat />
-                <CourseLit />
+                <CourseSection />
                 <Footer />
         </div>
     );
