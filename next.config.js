@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
+require('dotenv').config();
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -8,6 +9,11 @@ const nextConfig = {
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
+  },
+  env:{
+    API_URL: process.env.API_URL,
+    LOCAL_FILE_PATH:process.env.LOCAL_FILE_PATH,
+    ENCRYPT_KEY:process.env.ENCRYPT_KEY
   },
   exportPathMap: async function (
     defaultPathMap,

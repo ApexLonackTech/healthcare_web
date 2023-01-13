@@ -7,23 +7,22 @@ function Slide(props) {
     <div className={Style.slide}>
       <div className={Style.leftContainer}>
         <div className={Style.textColumn}>
-          <h5 className={Style.ad}>
-            Lets <b>Begin</b>
+          <h5 class="display-6 mb-0 w-20">
+            Lets <b className="text-primary">Begin</b>
           </h5>
-          <h2 className={Style.title}>
-            Lets Find The Right <b>Course</b> For You
-          </h2>
-          <span className={Style.description}>
+          <h1 class="display-2 mb-0 w-20">
+            Lets Find The Right <b className="text-primary">Course</b> For You
+          </h1>
+          <dd >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
             dignissim, sem non convallis molestie. Lorem ipsum dolor sit amet,
             consectetur adipiscing elit. Etiam dignissim, sem non convallis
             molestie.
-          </span>
+          </dd>
           <div className={Style.buttonRow}>
-            <a className={Style.register}>Register</a>
-            <button className={Style.play}>
-              {" "}
-              <em>
+            <a className="btn btn-primary m-1 text-white">Register</a>
+            <button className="btn btn-outline-dark m-1">
+              <em className="m-1">
                 <PlayCircle />
               </em>
               Play Video

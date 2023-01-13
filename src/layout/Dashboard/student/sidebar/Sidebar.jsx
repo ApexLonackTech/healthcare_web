@@ -15,9 +15,12 @@ import {
 } from "@mui/icons-material";
 import { ThemeContext } from "../../../../context/theme/ThemeContext";
 import Link from "next/link";
+import Backdrop from "@mui/material/Backdrop";
+import CircularProgress from "@mui/material/CircularProgress";
 
 function Sidebar(props) {
   const { theme, changeTheme } = useContext(ThemeContext);
+  const { loader,handleCloseLoader } = props;
   return (
     <div className={Style.sideMenu}>
       <div className={Style.logoContainer}>
@@ -147,6 +150,13 @@ function Sidebar(props) {
           </li>
         </div>
       </aside>
+      <Backdrop
+        sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={loader}
+        onClick={handleCloseLoader}
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
     </div>
   );
 }

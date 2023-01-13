@@ -7,7 +7,13 @@ import ReadMore from "./ReadMore/ReadMore";
 import Button from "./Button/Button/Button";
 import TextInput from "./TextInput/TextInput";
 import ModalLayout from "./Modal/Modal";
-import Action from "./Action/Action"
+import Action from "./Action/Action";
+import ImageOp from "./Image";
+import PayButton from "./PayButton/PayButton";
+import VideoJS from "./VideoPlayer";
+import Quiz from "./Quiz/Quiz";
+import Meeting from "./Meeting/Meeting";
+import File from "./File/File";
 
 
 export {
@@ -19,5 +25,11 @@ export {
     ReadMore,
     Button,
     TextInput,
-    Action
+    Action,
+    ImageOp,
+    PayButton,
+    VideoJS,
+    Quiz,
+    Meeting,
+    File
 }

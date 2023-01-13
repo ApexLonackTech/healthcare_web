@@ -175,9 +175,10 @@
     flex-direction: row;
     width: 50%;
     height: 100vh;
-    background: linear-gradient(180deg, #545be8 0%, #1815aa 100%);
+    background: linear-gradient(180deg, #d6dff9 0%, #d6dff9 100%);
     img {
       object-fit: contain;
+      width: 90%;
     }
     @media screen and (max-width: 900px) {
       display: none;

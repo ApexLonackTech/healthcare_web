@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 html,
@@ -38,75 +38,84 @@ button{
   to {
     transform: rotate(360deg);
   }
-}
+} */
 .l_w_b {
-  color: #1815aaef;
+  color: #1815aaef !important;
 }
 .d_t {
-  color: #282c34;
+  color: #282c34 !important;
 }
 .l_w {
-  color: #fff;
+  color: #fff !important;
 }
 .l_t {
-  color: #e3e3e3;
+  color: #e3e3e3 !important;
 }
 .d_h_t {
-  color: #3e434b;
+  color: #3e434b !important;
 }
 .l_h_t {
-  color: #f6f6f6;
+  color: #f6f6f6 !important;
 }
 
 .d_b {
-  background-color: rgb(40, 42, 43);
+  background-color: rgb(40, 42, 43) !important;
 }
 .l_b {
-  background-color: #e3e3e3;
+  background-color: #e3e3e3 !important;
 }
 
 .ll_b {
-  background-color: #f6f6f6;
+  background-color: #f6f6f6 !important;
 }
 
 .d_m_b {
-  background-color: rgba(100, 100, 100, 0.563);
+  background-color: rgba(100, 100, 100, 0.563) !important;
 }
 .l_m_b {
-  background-color: rgba(66, 133, 244, 0.12);
+  background-color: rgba(66, 133, 244, 0.12) !important;
 }
 
 .d_r_b {
-  background-color: rgb(25, 25, 25);
+  background-color: rgb(25, 25, 25) !important;
 }
 .l_r_b {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .d_b_b {
-  background-color: #121212;
+  background-color: #121212 !important;
 }
 .l_b_b {
-  background-color: #1815aaef;
+  background-color: #1815aaef !important;
 }
 
 .c_r {
-  background-color: #cf231d;
+  background-color: #cf231d !important;
 }
 
 .d_br_b {
-  border: 1px solid #4b4b4b;
+  border: 1px solid #4b4b4b !important;
 }
+
+.d_b_bt {
+  border-bottom: 1px solid #4b4b4b !important;
+}
+
+.l_b_bt {
+  border-top: 1px solid #b6b6b6 !important;
+}
+
 .l_br_b {
-  border: 1px solid #1815aa;
+  border: 1px solid #1815aa !important;
 }
 
 .l_p_b{
-  background-color: #545be8;
+  background-color: #545be8 !important;
 }
 
 .l_br_b {
-  border: 1px solid #ebebeb;
+  border: 1px solid #ebebeb !important;
 }
 
 .l_s_b {
@@ -138,6 +147,16 @@ hr {
   padding: 2px 2px 2px 2px;
   background-blend-mode: lighten;
 }
+
+.activeDark {
+  justify-content: space-between;
+  background: #414141;
+  color: #f3f3f3 !important;
+  padding: 2px 2px 2px 2px;
+  background-blend-mode: lighten;
+}
+
+
 
 @-moz-keyframes spin {
   100% {

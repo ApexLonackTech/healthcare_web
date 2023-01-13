@@ -1,0 +1,10 @@
+{
+    "quiz_section":{
+        "congrats_message":"Great job! You are ready to move on to the next lecture.",
+        "retry_message":"Not good enough! Retry quiz before moving on to the next lecture."
+    },
+    "app_name":"Learn with LakeShore",
+    "login_page":{
+        "success_registering":"Thanks you for registering, please proceed to login"
+    }
+}

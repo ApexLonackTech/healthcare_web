@@ -1,5 +1,5 @@
 .accordion {
-  border: 1px solid gray;
+  // border: 1px solid gray;
   // background-color: rgb(215, 215, 215);
   .section {
     display: flex;
@@ -43,10 +43,10 @@
         font-size: 14px;
         font-weight: 500;
         padding: 5px;
-        &:hover {
-          color: #545be8;
-          background-color: rgba(0, 0, 0, 0.142);
-        }
+        // &:hover {
+        //   color: #545be8;
+        //   background-color: rgba(0, 0, 0, 0.142);
+        // }
         .left_side {
           display: flex;
           flex-direction: row;

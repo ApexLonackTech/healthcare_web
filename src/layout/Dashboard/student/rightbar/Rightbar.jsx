@@ -10,20 +10,22 @@ import Style from "./righbar.module.scss";
 import todo_data from "../../../../data/todo_data.json";
 import moment from "moment";
 import { ThemeContext } from "../../../../context/theme/ThemeContext";
+import { AuthContext } from "../../../../context/auth/ApiContext";
 
 function Rightbar(props) {
   const {theme,changeTheme}=useContext(ThemeContext);
+  const { user, token } = React.useContext(AuthContext);
   return (
     <div className={theme==="light"? Style.rightbar_section+" ll_b": Style.rightbar_section+" d_s_b"}>
       <div className={Style.topMenu}>
         <a>
-          <Settings fontSize="large" />{" "}
+          <Settings fontSize="large" />
         </a>
         <a>
-          <Notifications fontSize="large" />{" "}
+          <Notifications fontSize="large" />
         </a>
         <a>
-          <img src="/icons/avatar.png" loading="lazy" />
+          <img width={user.image?"40":'60'} src={user?.image?process.env.LOCAL_FILE_PATH+'profile/medium/'+user.image:"/icons/avatar.png"} loading="lazy" />
         </a>
       </div>
       <div className={Style.section_container}>

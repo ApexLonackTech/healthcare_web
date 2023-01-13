@@ -33,9 +33,7 @@ const _retrieveToken = async () => {
     return null;
   }
 };
-//   const addComma=(num)=>{
-//     return num?'₦'+num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","):'₦0';
-// }
+
 
 // const addCommaN=(num)=>{
 //   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

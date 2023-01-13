@@ -1,6 +1,10 @@
 import React, { useContext, useEffect } from "react";
 import Style from "./home.module.scss";
-import {StudentSideMenu,StudentNotification,StudentCourse} from "../../../layout/Dashboard";
+import {
+  StudentSideMenu,
+  StudentNotification,
+  StudentCourse,
+} from "../../../layout/Dashboard";
 
 import { Brightness4, LightMode } from "@mui/icons-material";
 import LinearProgress, {
@@ -15,9 +19,16 @@ import course_data from "../../../data/course_data.json";
 
 import Link from "next/link";
 import { ThemeContext } from "../../../context/theme/ThemeContext";
-import dynamic from 'next/dynamic';
-const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
-
+import dynamic from "next/dynamic";
+import { AuthContext } from "../../../context/auth/ApiContext";
+import { MembershipContext } from "../../../context/membership/membership";
+import { decryptJSON } from "../../../utils/crypt";
+import { authGetRequest } from "../../api/laravel/public/api";
+import ModalLayout from "../../../components/Modal/Modal";
+import { ProfileUpdateNotification } from "../../../layout/Notifications";
+import { errorMessage } from "../../../utils/notification";
+import { toast } from "react-toastify";
+const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 const Home = () => {
   const { theme, changeTheme } = useContext(ThemeContext);
@@ -32,10 +43,31 @@ const Home = () => {
       backgroundColor: theme.palette.mode === "light" ? "#545be8" : "#545be8",
     },
   }));
+  const { user, token } = React.useContext(AuthContext);
+  const { membership } = React.useContext(MembershipContext);
+  const [data, setData] = React.useState({});
+  const [isPageLoader, setPageLoader] = React.useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  React.useEffect(() => {
+    dashboardGet();
+  }, []);
+
+  const dashboardGet = async () => {
+    setPageLoader(true);
+    const { data_r, isError } = await authGetRequest(`/account/dashboard`);
+    if (isError) {
+      errorMessage(toast, data_r?.message);
+      setPageLoader(false);
+      return false;
+    }
+    setData(data_r);
+    setPageLoader(false);
+  };
+
   return (
     <div
       className={
@@ -45,7 +77,7 @@ const Home = () => {
       }
     >
       {/* <Topbar /> */}
-      <StudentSideMenu menu="home" />
+      <StudentSideMenu menu="home" loader={isPageLoader} />
       <main
         className={
           theme === "light" ? Style.content_container : Style.content_container
@@ -53,7 +85,7 @@ const Home = () => {
       >
         <section className={Style.top_section}>
           <span className={theme === "light" ? "d_t" : "l_t"}>
-            Hello Gabriel Dam, Welcome back
+            Hello {user?.first_name} {user?.last_name}, Welcome back
             <img
               src="/icons/emojione_waving-hand-medium-light-skin-tone.png"
               className="icon"
@@ -79,12 +111,58 @@ const Home = () => {
         <section
           className={
             theme === "light"
+              ? Style.tutorial_section + " l_r_b d_t "
+              : Style.tutorial_section + " d_r_b l_t "
+          }
+        >
+          <div className="d-flex align-items-end row">
+            <div className="col-sm-7">
+              <div className="card-body">
+              {data?.membership&&
+                <h5 className="card-title text-primary">
+                 {data?.membership?.plan?.title}! 🎉
+                </h5>}
+                {data?.membership&&
+                <p className="mb-4">
+                  You have done <span className="fw-bold">{data?.usage}%</span> more courses
+                  with the current plan. Click the button below to upgrade account.
+                </p>}
+                {!data?.membership&&
+                  <p className="mb-4">
+                  You currently do have a plan a plan. Click the button below to upgrade account.
+                </p>
+                }
+
+                <a
+                  href="javascript:;"
+                  className="btn btn-sm btn-outline-primary"
+                >
+                  Upgrade Account
+                </a>
+              </div>
+            </div>
+            <div className="col-sm-5 text-center text-sm-left">
+              <div className="card-body pb-0 px-0 px-md-4">
+                <img
+                  src="/img/man-with-laptop-light.png"
+                  height="140"
+                  alt="View Badge User"
+                  data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                  data-app-light-img="illustrations/man-with-laptop-light.png"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          className={
+            theme === "light"
               ? Style.advert_section + " l_b_b l_t l_br_b"
               : Style.advert_section + " d_b_b l_t d_br_b"
           }
         >
           <div className={Style.top_header}>
-            <h3>Community health sensitisation</h3>
+            <h3 className="text-white">Community health sensitisation</h3>
           </div>
           <div className={Style.top_body}>
             <span>
@@ -140,15 +218,58 @@ const Home = () => {
                 : Style.course_containerr + " d_r_b l_t"
             }
           >
-            {course_data.map((item, index) => {
+            {data?.total_course?.map((item, index) => {
               if (index < 3)
                 return (
-                  <StudentCourse item={item} key={index} />
+                  <StudentCourse
+                    item={item.courses[0]}
+                    link={item?.courses[0]?"/student/course/" + item.courses[0].uuid:''}
+                    progress={item.progress}
+                    key={index}
+                  />
                 );
             })}
           </div>
         </section>
         <section
+          className={
+            theme === "light"
+              ? Style.course_sectionhome + " l_r_b d_t "
+              : Style.course_sectionhome + " d_r_b l_t "
+          }
+        >
+          <div className={Style.top_header}>
+            <h3>Register a new Course</h3>
+            <a className={theme === "light" ? "d_t" : "l_t"} href="">
+              View All
+            </a>
+          </div>
+          <div
+            className={
+              theme === "light"
+                ? Style.course_containerr + " l_r_b d_t"
+                : Style.course_containerr + " d_r_b l_t"
+            }
+          >
+            {data?.related_course?.map((item, index) => {
+              if (
+                index < 3 &&
+                data?.total_course.findIndex(
+                  (it) => it.course_id != item.course_id
+                )
+              )
+                return (
+                  <StudentCourse
+                    item={item}
+                    link={item?.courses[0]?"/course/" + item.courses[0].uuid:''}
+                    progress={null}
+                    key={index}
+                  />
+                );
+            })}
+          </div>
+        </section>
+        {/* <section
           className={
             theme === "light"
               ? Style.assessment_section + " l_r_b d_t"
@@ -380,9 +501,13 @@ const Home = () => {
               ]}
             />
           </div>
-        </section>
+        </section> */}
       </main>
       <StudentNotification />
+      <ModalLayout
+        modal={user?.first_name ? false : true}
+        content={<ProfileUpdateNotification />}
+      />
     </div>
   );
 };

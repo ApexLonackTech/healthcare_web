@@ -20,11 +20,22 @@ function CourseStudentCard(props) {
       backgroundColor: theme.palette.mode === "light" ? "#545be8" : "#545be8",
     },
   }));
+  const { item, progress,link } = props;
 
   return (
-    <Link href={"/student/course/2134567"} className={Style.item_course}>
+    <Link href={link?link:''} className={Style.item_course}>
       <a className={Style.item_course}>
-        <img src={props.item.image} loading="lazy" />
+        <img
+          src={
+            item?.poster?.storage === "local"
+              ? process.env.LOCAL_FILE_PATH +
+                item?.poster?.path +
+                "/medium/" +
+                item?.poster?.name
+              : item?.poster?.path
+          }
+          loading="lazy"
+        />
         <div
           className={
             theme === "light"
@@ -32,16 +43,18 @@ function CourseStudentCard(props) {
               : Style.bottom_label + " d_b_b l_t"
           }
         >
-          <span>{props.item.title}</span>
+          <span>{item.title} </span>
+          {progress!=null&&
           <span className={Style.duration}>
-            {props.item.status}/{props.item.section} sections
-          </span>
+            {progress}/{item?.course_section?.length} sections
+          </span>}
+          {progress!=null&&
           <div className={Style.progressContainer}>
             <BorderLinearProgress
               variant="determinate"
-              value={(props.item.status / props.item.section) * 100}
+              value={(progress / item?.course_section?.length) * 100}
             />
-          </div>
+          </div>}
         </div>
       </a>
     </Link>

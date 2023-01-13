@@ -11,6 +11,7 @@ import StudentModuleView from "./student/Module/Overview/Overview";
 import StudentModuleQandA from "./student/Module/Q&A/Q&A";
 import StudentNotification from "./student/rightbar/Rightbar";
 import StudentSideMenu from "./student/sidebar/Sidebar";
+import DiscussItem from "./student/Discussion/DiscussItem/DiscussItem";
 
 
 
@@ -28,4 +29,5 @@ export {
     StudentModuleView,
     StudentNotification,
     StudentSideMenu,
+    DiscussItem
 }

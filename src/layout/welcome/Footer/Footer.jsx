@@ -24,39 +24,39 @@ function Footer(props) {
       </div>
       <div className={Style.section_column}>
         <span className={Style.title}>Home</span>
-        <ul>
+        {/* <ul>
             <li>Get the app</li>
             <li>All Courses</li>
             <li>About Us</li>
             <li>Contact Us</li>
-        </ul>
+        </ul> */}
       </div>
       <div className={Style.section_column}>
         <span className={Style.title}>Careers</span>
-        <ul>
+        {/* <ul>
             <li>Blog</li>
             <li>Help and Support</li>
             <li>Affiliate</li>
-            {/* <li>Account</li> */}
-        </ul>
+           
+        </ul> */}
       </div>
       <div className={Style.section_column}>
         <span className={Style.title}>Terms</span>
-        <ul>
+        {/* <ul>
             <li>Privacy Policy</li>
             <li>Cookie Setting</li>
             <li>Site Map</li>
             <li>Accessibility Statement</li>
-        </ul>
+        </ul> */}
       </div>
       <div className={Style.section_column}>
         <span className={Style.title}>Contact</span>
-        <ul>
+        {/* <ul>
             <li><Map sx={{marginRight:2}} /> 2, Alkoloba Street</li>
             <li><Email sx={{marginRight:2}}/> lakeshore@info.com</li>
             <li><Phone sx={{marginRight:2}} /> +2341234567</li>
-            {/* <li>Account</li> */}
-        </ul>
+           
+        </ul> */}
       </div>
     </div>
   );

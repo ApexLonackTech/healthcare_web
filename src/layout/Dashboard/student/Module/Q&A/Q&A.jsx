@@ -1,11 +1,8 @@
 import React from "react";
 import Style from "./q&a.module.scss";
 import Box from "@mui/material/Box";
-import {
-  SearchTextInput,
-  MultipleSelect,
-  DiscussItem,
-} from "../../../../../components";
+import { SearchTextInput, MultipleSelect } from "../../../../../components";
+import { DiscussItem } from "../../../index";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -71,12 +68,12 @@ function QandA(props) {
           </h5>
         </div>
         <ul className={Style.col_discuss}>
-            <DiscussItem />
-            <DiscussItem />
-            <button className={Style.see_more}>See More</button>
+          <DiscussItem />
+          <DiscussItem />
+          <button className={Style.see_more}>See More</button>
         </ul>
         <div className={Style.ask_container}>
-            <a className={Style.ask}>Ask a question</a>
+          <a className={Style.ask}>Ask a question</a>
         </div>
       </div>
     </div>
